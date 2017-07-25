@@ -1,0 +1,30 @@
+.item-label {
+	margin:32px 32px 0 0;
+	display:inline-block
+}
+.item-radio {
+	display:none
+}
+.item-radioInput {
+	background-color:#fff;
+	border:1px solid rgba(0,0,0,0.15);
+	border-radius:100%;
+	display:inline-block;
+	height:32px;margin-right:10px;
+	margin-top:3px;
+	vertical-align:middle;
+	width:32px;
+	line-height:1
+}
+.item-radio:checked + .item-radioInput:after {
+	background-color:#70dcb5;
+	border-radius:100%;
+	content:"";
+	display:inline-block;
+	height:22px;
+	margin:5px;
+	width:22px
+}
+.item-checkbox.item-radioInput,.item-radio:checked + .item-checkbox.item-radioInput:after{
+	border-radius:0
+}
